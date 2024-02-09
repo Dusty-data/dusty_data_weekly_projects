@@ -1,0 +1,5 @@
+my_tuple = ([1, 2, 3], [4, 5, 6])
+my_tuple[0][1] = 10  # İlk elemanın ikinci öğesini 10 olarak değiştirir
+
+#
+print(my_tuple)
