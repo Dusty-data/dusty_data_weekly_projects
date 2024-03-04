@@ -15,7 +15,7 @@ class TaskEditing:
             task.priority = priority
         pass
 
-    def set_new_date(self,task_id, deadline):
+    def set_new_date(self, task_id, deadline):
         task = self.get_task_by_id(task_id)
         if task:
             task.deadline = deadline
@@ -30,5 +30,4 @@ class TaskEditing:
             if task.task_id == task_id:
                 return task
         print(f"Task {task_id}")
-        
-         
+

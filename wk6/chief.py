@@ -4,8 +4,9 @@ from taskTracking import TaskTracking
 
 class TaskManagement:
     
-    def __init(self):
+    def __init__ (self, task):
         self.task_list = []
+        
     def add_task(self, task):
         self.task_list.append(task)
 
@@ -18,8 +19,8 @@ t1 = TaskManagement()
 te = TaskEditing(t1)
 tt = TaskTracking(t1)
 
-p1 = PersonalTask(1, "P1", "2024-03-30")
-w1 = WorkTask(2, "W2", "2024-03-28")
+p1 = PersonalTask(1, "P1", "2024-03-30", "Pending")
+w1 = WorkTask(2, "W2", "2024-03-28", "Pending")
 t1.add_task(p1)
 t1.add_task(w1)
 

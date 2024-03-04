@@ -3,7 +3,7 @@ from datetime import datetime
 from abc import ABC, abstractmethod
 
 class Task(ABC):
-    def __init__(Self, task_id, task_name, deadline, status="Pending"):
+    def __init__(self, task_id, task_name, deadline, status="Pending"):
         self.task_id = task_id
         self.task_name = task_name
         self.deadline = deadline
@@ -25,7 +25,7 @@ class Task(ABC):
     
 class PersonalTask (Task):
     def __init__(self, task_id, task_name, deadline, status="Pending"):
-        super().__init__(task_id, task_name, deadline, status)
+        super().__init__(self, task_id, task_name, deadline, status)
         self.priority = "Low"
 
     def color_your_task(self):
